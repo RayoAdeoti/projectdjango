@@ -18,5 +18,6 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    # path("<int:id>/", artiste_detail_api, name="artiste_detail_api"),
     path('musicapp/', include('musicapp.urls'))
 ]
